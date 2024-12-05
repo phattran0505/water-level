@@ -22,11 +22,11 @@ app.post('/api/level', (req, res) => {
 });
 
 // API để gửi dữ liệu cho frontend
-app.get('/api/levels', (req, res) => {
+app.get('/api/level', (req, res) => {
   res.status(200).send(waterLevels);
 });
 
-const PORT = 3000;
+const PORT = 5000;
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
